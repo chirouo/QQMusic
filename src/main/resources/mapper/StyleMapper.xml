@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qqmusic.mapper.StyleMapper">
+
+    <resultMap id="BaseResultMap" type="com.qqmusic.entity.Style">
+            <id property="styleId" column="style_id" jdbcType="INTEGER"/>
+            <result property="style" column="style" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        style_id,style
+    </sql>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qqmusic.mapper.UploadListMapper">
+
+    <resultMap id="BaseResultMap" type="com.qqmusic.entity.UploadList">
+            <id property="uploadId" column="upload_id" jdbcType="INTEGER"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="musicId" column="music_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        upload_id,user_id,music_id
+    </sql>
+</mapper>

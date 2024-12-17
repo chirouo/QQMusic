@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qqmusic.mapper.MusicMapper">
+
+    <resultMap id="BaseResultMap" type="com.qqmusic.entity.Music">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="musicname" column="musicname" jdbcType="VARCHAR"/>
+            <result property="musicUrl" column="music_url" jdbcType="VARCHAR"/>
+            <result property="styleId" column="style_id" jdbcType="INTEGER"/>
+            <result property="languageId" column="language_id" jdbcType="INTEGER"/>
+            <result property="singerId" column="singer_id" jdbcType="INTEGER"/>
+            <result property="lyricUrl" column="lyric_url" jdbcType="VARCHAR"/>
+            <result property="coverUrl" column="cover_url" jdbcType="VARCHAR"/>
+            <result property="downloadCount" column="download_count" jdbcType="INTEGER"/>
+            <result property="likeCount" column="like_count" jdbcType="INTEGER"/>
+            <result property="commentCount" column="comment_count" jdbcType="INTEGER"/>
+            <result property="introduction" column="introduction" jdbcType="VARCHAR"/>
+            <result property="musicId" column="music_id" jdbcType="VARCHAR"/>
+            <result property="releaseDate" column="release_date" jdbcType="VARCHAR"/>
+            <result property="duration" column="duration" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,musicname,music_url,
+        style_id,language_id,singer_id,
+        lyric_url,cover_url,download_count,
+        like_count,comment_count,introduction,
+        music_id,release_date,duration
+    </sql>
+</mapper>
